@@ -15,14 +15,27 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+## Data
+In order to run this project you will need a `student.json` file with the following Schema:
 ```
-npm run test
-```
+{
+    "students": [
+        {
+            "firstName": "String",
+            "lastName": "String",
+            # pic is a url for your avatar picture
+            "pic": "String",
+            "email": "String",
+            "company": "String",
+            "skill": "String",
+            # A list of your final grades as strings, which gets converted to ints 
+            "grades": [
+                "String"
+            ]
+        }
 
-### Lints and fixes files
-```
-npm run lint
+    ]
+}
 ```
 
 ### Customize configuration
